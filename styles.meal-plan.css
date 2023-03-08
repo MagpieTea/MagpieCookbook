@@ -1,0 +1,81 @@
+/* color palette: 
+  Snow: #FFFBFF
+  Lavender Gray: #cac4ce
+  Vivid sky blue: #5bd4fe
+  Blue Yonder: #5a73a4
+  Prussian Blue: #172a3a */
+
+body{
+  background-color: #FFFBFF;
+  font-size: 1.5vw;
+  color: #353535 ;
+  font-family: 'Itim', cursive;
+  text-align: center;
+
+}
+
+.nav-bar{
+  background-color:#5A73A4;
+  margin: 0; 
+  position: fixed;
+  top: 0vh;
+  left: 0vh; 
+  width: 100vw;
+  padding: 5px;
+  text-align: left;
+}
+
+.nav-bar a, button{
+  text-decoration: none;
+  color: #d3d5d4;
+  font-family: 'Itim', cursive;
+  font-style: bold;
+  font-size: 1rem;
+}
+.nav-btn, button{
+  background-color: #3C5B9A;
+  padding: 5px;
+  transition-duration: .5s;
+  border-radius: 5px;
+  border-color:#5BD4FE;
+}
+
+.nav-btn:hover, button:hover{
+  background-color: #5BD4FE;
+}
+h1{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3em;
+  margin-top: 5vh;
+}
+p{
+  font-size: .75em;
+}
+table{
+ width: 85vw;
+ height: 60vh;
+ margin: auto;
+ table-layout: fixed;
+ border: 3px solid black;
+ border-collapse: collapse;
+  
+}
+
+th{
+  border: 3px solid black;
+}
+tr{
+  border: 3px solid black;
+
+}
+td{
+  border: 3px solid black;
+  vertical-align: middle;
+  font-size: 1em;
+  overflow-wrap: break-word;
+}
+.add-to-list{
+ vertical-align: top;/* I don't know why this works. */
+ margin: 2px;
+  
+}

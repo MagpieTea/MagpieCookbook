@@ -1,0 +1,100 @@
+/* color palette: 
+  Snow: #FFFBFF
+  Lavender Gray: #cac4ce
+  Vivid sky blue: #5bd4fe
+  Blue Yonder: #5a73a4
+  Prussian Blue: #172a3a */
+
+body{
+  background-color: #FFFBFF;
+  font-size: 1.5vw;
+  color: #353535 ;
+  font-family: 'Itim', cursive;
+  text-align: center;
+
+}
+
+.nav-bar{
+  background-color:#5A73A4;
+  margin: 0; 
+  position: fixed;
+  top: 0vh;
+  left: 0vh; 
+  width: 100vw;
+  padding: 5px;
+  text-align: left;
+}
+
+.nav-bar a{
+  text-decoration: none;
+  color: #d3d5d4;
+  font-family: 'Itim', cursive;
+  font-style: bold;
+  font-size: 1rem;
+}
+.nav-btn{
+  background-color: #3C5B9A;
+  padding: 5px;
+  transition-duration: .5s;
+  border-radius: 5px;
+  border-color:#5BD4FE;
+}
+
+.nav-btn:hover{
+  background-color: #5BD4FE;
+}
+h1{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3em;
+  
+}
+/* .cookbook-intro{
+  
+} */
+.cookbook-intro img{
+  margin-top: 5vh;
+  width: 15vw;
+}
+.recipe-carousel{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 10vw;
+  
+}
+.recipe-card{
+  color: #d3d5d4;
+  font-size: .5em;
+  /* background-image: url(/images/recipe-card-img2.png);
+  background-position: center;
+  background-size: cover; */
+  /* try making the background image in the html instead. put it in the div, position absolute, same width as the div, maybe then I can target it and it will transform? */
+  width: 10vw;
+  overflow-y: hidden;
+  height: 20vh;
+  padding: 0 2% 2%;
+  background-color: #5A73A4;
+  margin: 1vw;
+  border-radius: 10px;  
+  border-color:#5BD4FE;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: -5px 5px #5BD4FE50;
+}
+.recipe-card a{
+  text-decoration: none;
+  color: #d3d5d4;
+}
+.recipe-card:hover{
+  transform: scale(1.5);
+  overflow-y: visible;
+  height: auto;
+  
+}
+
+.recipe-title{
+  font-size: 1.5em;
+}
+/* .footer{
+
+}  */
