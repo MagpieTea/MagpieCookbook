@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  
+  <title>The Magpie Cookbook | Shopping List</title>
+</head>
+<body>
+  <nav class="nav-bar">
+    <!-- links back to the home-page -->
+      <button class="nav-btn" id="cookbook-nav-btn"><a href="/index.html">Recipe Book</a></button>
+  <!-- this will link to a form that will create a page! no idea how to do this yet, but I will get it eventually -->
+      <button class="nav-btn" id="add-recipe-nav-btn"><a href="#">Add a Recipe</a></button>
+      <!-- links to a list of favorited recipes, still no idea how to create a favorites list, but I will learn! -->
+      <button class="nav-btn" id="favorite-recipe-nav-btn"><a href="#">Favorite Recipes</a></button>
+      <!-- links to shopping lists for meal plans or by recipe. Should be able to add shopping lists to a main printable shopping list eventually. -->
+      <button class="nav-btn" id="shopping-lists-nav-btn"><a href="shopping-list.html">Shopping Lists</a></button>
+  </nav>
+  <ul id="list-items"></ul>
+  <script type= "text/javascript" src="/js/script.js"></script>
+  <script> //this script isnt working properly! It turn all things into one list item on the ul instead of individual li items.
+    shoppingListCookie(); //stores the cookie data into shoppingList as an array
+    var list = document.getElementById("list-items"); //this line stores the element <ul id="list-items"></ul> as "list"
+
+    function listItemsGenerator(item){ 
+    var li = document.createElement("li"); //this line creates a list item element;
+    li.innerText = item; //this line adds text to the list item, but instead of adding just one element from the shoppingList array, it adds all the elements.
+    console.log(li);
+    list.appendChild(li);
+    console.log(list);
+    } 
+    for (i = 0; i < shoppingList.length; i++){
+    shoppingList[i].forEach(listItemsGenerator);
+  }
+  </script>
+  
+  
+</body>
