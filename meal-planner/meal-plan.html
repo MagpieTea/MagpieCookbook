@@ -20,8 +20,8 @@
       <button class="nav-btn"><a href="#">Add a Recipe</a></button>
       <!-- links to a list of favorited recipes, still no idea how to create a favorites list, but I will learn! -->
       <button class="nav-btn"><a href="#">Favorite Recipes</a></button>
-      <!-- links to shopping lists for meal plans or by recipe. Should be able to add shopping lists to a main printable shopping list eventually. -->
-      <button class="nav-btn"><a href="#">Shopping Lists</a></button>
+      <!-- links to shopping lists for meal plans or by recipe. Should be able to add shopping lists to a main printable shopping list eventually (work in progress!). -->
+      <button class="nav-btn" id="shopping-lists-nav-btn"><a href="./shopping-list.html">Shopping Lists</a></button>
   </nav>
 
   <h1>Monthly Meal-Plan at a Glance</h1>
@@ -43,7 +43,7 @@
         <td>Raspberry Chicken Bake</td>
         <td>BBQ Chicken and Veggie Pizza</td>
         <td>Vegan Red Lentil Curry</td>
-        <td><button class="add-to-list" type="button"> Add All to Shopping List</button></td>
+        <td><button class="add-to-list" type="button" onclick="addToList(cajunShrimp); addToList(teriyakiBurger); addToList(recipe3); addToList(broccoliBeef); addToList(raspberryChicken); addToList(pizza); addToList(lentilCurry);shoppingListCookie();"> Add All to Shopping List</button></td> <!-- this button will call the add to list function from javascript file to add the contents of the week's meal plan to the list, then run the function that saves it to a cookie.-->
       </tr>
       <tr>
         <td>2</td>
@@ -92,5 +92,6 @@
 
     </tbody>
   </table>
+  <script type= "text/javascript" src="/js/script.js"></script>
 </body>
 </html>
