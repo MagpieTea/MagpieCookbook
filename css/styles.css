@@ -13,6 +13,11 @@ body{
   text-align: center;
 
 }
+.nav-bar-small-icon{
+  width: 30px;
+  height: auto;
+  background-color: #5BD4FE;
+}
 
 .nav-bar{
   background-color:#5A73A4;
@@ -32,17 +37,9 @@ body{
   font-style: bold;
   font-size: 1rem;
 }
-.nav-btn{
-  background-color: #3C5B9A;
-  padding: 5px;
-  transition-duration: .5s;
-  border-radius: 5px;
-  border-color:#5BD4FE;
-}
 
-.nav-btn:hover{
-  background-color: #5BD4FE;
-}
+
+
 h1{
   font-family: 'Berkshire Swash', cursive;
   font-size: 3em;
@@ -51,27 +48,118 @@ h1{
 /* .cookbook-intro{
   
 } */
-.cookbook-intro img{
-  margin-top: 5vh;
-  width: 15vw;
+
+/* LARGE SCREENS */
+@media (min-width: 1200px ){
+  .nav-bar-small-icon, .nav-btn-small{
+    visibility: hidden;
+  }
+
+  .nav-bar-small{
+    visibility: hidden;
+  }
+  .cookbook-intro img{
+    margin-top: 5vh;
+    width: 15vw;
+  }
+ 
+  .recipe-card{
+    width: 300px;
+    font-size: 20px;
+  }
+  .nav-btn{
+    background-color: #3C5B9A;
+    padding: 5px;
+    transition-duration: .5s;
+    border-radius: 5px;
+    border-color:#5BD4FE;
+  }
+  .nav-btn:hover{
+    background-color: #5BD4FE;
+  }
+  .recipe-card:hover{
+    transform: scale(1.5);
+    overflow-y: visible;
+    height: auto;
+    
+  }
+}
+/* MEDIUM SCREENS */
+@media (min-width: 993px) and (max-width: 1200px){
+  .nav-bar-small, .nav-btn-small{
+    visibility: hidden;
+  }
+  .nav-bar-small-icon{
+    visibility: hidden;
+  }
+  .cookbook-intro img{
+    margin-top: 7vh;
+    width: 15vw;
+  }
+  .recipe-card{
+    width: 35%;
+    font-size: 1em;
+  }
+  .nav-btn{
+    background-color: #3C5B9A;
+    padding: 5px;
+    transition-duration: .5s;
+    border-radius: 5px;
+    border-color:#5BD4FE;
+  }
+  .nav-btn:hover{
+    background-color: #5BD4FE;
+  }
+  .recipe-card:hover{
+    transform: scale(1.5);
+    overflow-y: visible;
+    height: auto;
+  }
+}
+/* SMALL SCREENS */
+@media (max-width: 992px){
+  .cookbook-intro img{
+    margin-top: 7vh;
+    width: 15vw;
+  }
+  .recipe-card{
+    width: 75%;
+  }
+  .nav-bar-large, .nav-bar-medium{
+    visibility: hidden;
+  }
+  .nav-btn-small{
+    background-color: #5BD4FE;
+    padding: 5px;
+    transition-duration: .5s;
+    border-radius: 5px;
+    border-color: #3C5B9A;
+  }
+  
+  .recipe-title{
+    font-size: 1.5em;
+  }
+  .recipe-card{
+    font-size: 20px;
+  }
 }
 .recipe-carousel{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 10vw;
+  /* flex: 10vw; */
+  margin: auto;
+  justify-content: center;
   
 }
 .recipe-card{
   color: #d3d5d4;
-  font-size: .5em;
   /* background-image: url(/images/recipe-card-img2.png);
   background-position: center;
   background-size: cover; */
   /* try making the background image in the html instead. put it in the div, position absolute, same width as the div, maybe then I can target it and it will transform? */
-  width: 10vw;
   overflow-y: hidden;
-  height: 20vh;
+  height: 200px; 
   padding: 0 2% 2%;
   background-color: #5A73A4;
   margin: 1vw;
@@ -85,13 +173,6 @@ h1{
   text-decoration: none;
   color: #d3d5d4;
 }
-.recipe-card:hover{
-  transform: scale(1.5);
-  overflow-y: visible;
-  height: auto;
-  
-}
-
 .recipe-title{
   font-size: 1.5em;
 }
