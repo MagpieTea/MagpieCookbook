@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <nav class="nav-bar">
+  <!-- this nav-bar will displayed on medium and large screens -->
+  <nav class="nav-bar nav-bar-large nav-bar-medium">
     <!-- links back to the home-page -->
       <button class="nav-btn"><a href="#">Recipe Book</a></button>
   <!-- this will link to a form that will create a page! no idea how to do this yet, but I will get it eventually -->
@@ -23,9 +23,16 @@
       <button class="nav-btn"><a href="#">Favorite Recipes</a></button>
       <!-- links to shopping lists for meal plans or by recipe. Should be able to add shopping lists to a main printable shopping list eventually. -->
       <button class="nav-btn"><a href="#">Shopping Lists</a></button>
-      <button class="nav-btn"><a href="./meal-planner/meal-plan.html">Meal Plan at a Glance</a></button>
+      <button class="nav-btn"><a href="meal-planner/meal-plan.html">Meal Plan at a Glance</a></button>
   </nav>
-
+  <!-- this nav-bar will be displayed only on small screens -->
+  <nav class="nav-bar nav-bar-small">
+    <button class="nav-btn-small"><a href="index.html"><img src="./images/cookbook.png" class=" nav-bar-small-icon"></a></button>
+    <button class="nav-btn-small"><a href="#"><img src="./images/add.png" class=" nav-bar-small-icon"></a></button>
+    <button class="nav-btn-small"><a href="#"><img src="./images/heart.png" class=" nav-bar-small-icon"></a></button>
+    <button class="nav-btn-small"><a href="#"><img src="./images/shopping-list.png" class=" nav-bar-small-icon"></a></button>
+    <button class="nav-btn-small"><a href="./meal-planner/meal-plan.html"><img src="./images/weekly.png" class=" nav-bar-small-icon"></a></button>
+  </nav>
 
   <section class="cookbook-intro">
     <img src="./images/magpie.png" alt="cartoon-magpie">
@@ -35,19 +42,19 @@
   <nav class="recipe-carousel">
     <div class="recipe-card">
       <h1 class="recipe-title">Shrimp Scampi</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>Classic and simple, this recipe is quick to throw together, making it the perfect weeknight meal.</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Honey Garlic Pork Chops</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>Covered in a sweet and savory sauce, this dish pairs best with rice and veggies for a quick weeknight meal.</p>
     </div>
     <div class="recipe-card">
-      <h1 class="recipe-title">Recipe 3</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <h1 class="recipe-title">Italian Sausage & Veggie Pasta</h1>
+      <p>Hearty and delicious. Full of flavor and fresh vegetables. The flavorful sausage makes this a favorite meal of the whole family.</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Crock Pot Broccoli Beef</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>A true set and forget meal. Pop this in the crockpot in the morning and experience the delicous result at dinner time. Serve with rice.</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Raspberry Chicken Bake</h1>
@@ -55,46 +62,46 @@
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">BBQ Chicken & Veggie Pizza</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>Flexible and simple easy weeknight meal. Have everyone make their own to allow for variaton in taste.</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Vegan Red Lentil Curry</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>The robust flavors in this curry are worth the effort of making it. Serve with <a>Yellow Rice</a> and naan and you'll understand why this is a favorite!</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Cajun Shrimp & Sausage Sheet Pan</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>Easy to make, full of vegetables, and ready in 30 minutes. What more could you want from a weeknight meal? Oh, and it's delicious! The secret is in the spices.</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Pulled Pork Tenderloin</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </div><div class="recipe-card"><a href="./recipe-pages/recipe-2.html">
+      <p>Another recipe that uses the crockpot to lesson the workload. Let the crock pot do the work and you reap the benefits of this simple and delicious meal. Serve on buns with your favorite BBQ side!</p>
+    </div><div class="recipe-card"><a href="./recipe-pages/salmon-sheet-pan.html">
       <h1 class="recipe-title">Baked Salmon Sheet Pan</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></a>
-    </div><div class="recipe-card"><a href="./recipe-pages/recipe-3.html">
+      <p>This all-in-one meal saves on dishes as well as time! Feel free to season the salmon how you prefer; this recipe errs on the side of savory and spicy.</p></a>
+    </div><div class="recipe-card"><a href="./recipe-pages/beef-egg-roll.html">
       <h1 class="recipe-title">Beef Egg Roll in a Bowl</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></a>
+      <p>Inspired by a friend. this recipe is so easy and so delicious that it will find its way onto your meal plan often!</p></a>
     </div><div class="recipe-card">
       <h1 class="recipe-title">Teriyaki Turkey Burgers</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>These lean substitute for classic beef burgers will not feel like a substitute at all. Delicious, dripping with robust flavor, you may end up liking them better!</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Crispy Honey Sesame Chicken</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>This recipe takes a labor of love, and is best suited to a weekend. The ingredients are simple, but frying the chicken can be more time-consuming than a weeknight allows. The payoff is a delicious sweet and savory chicken that the whole family will love. Best served with rice and steamed veggies.</p>
     </div>
-    <div class="recipe-card"> <a href="./recipe-pages/recipe-1.html">
+    <div class="recipe-card"> <a href="./recipe-pages/sun-dried-tomato-pasta.html">
       <h1 class="recipe-title">Sun-Dried Tomatos & Garlic Pasta</h1>
       <p>This meatless pasta is bursting with flavor. Easily comes together in under 30 minutes. The sun-dried tomatoes really perk up what is a very simple dish, and the spinach gives it a beautiful look while adding rich nutritional value.</p></a>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Cajun Shrimp & Rice</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>Hands-down one of the best ways to incorportate shrimp into a simple delicious meal. The spices in this dish bring out a spicy, unforgettable flavor you'll be looking forward to every time you see it on your meal plan!</p>
     </div><div class="recipe-card">
       <h1 class="recipe-title">Pork Stir Fry</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>Use whatever cut of pork you have handy to make this incredibly simple recipe. Serve with rice and stir-fry veggies of choice!</p>
     </div><div class="recipe-card">
       <h1 class="recipe-title">Fish Tacos</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>The search for the best fish tacos is finally over. Ladies and gentlemen, we have a winner!</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Beef Stir Fry</h1>
@@ -102,19 +109,20 @@
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Chicken Korma</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>This dish comes together in under 30 minutes into a savory classic indian dish. The spices make it feel like comfort food!</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Smoked Chicken</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>Smoking a whole chicken means you get the choice of dark or light meat, but you can't go wrong either way with such a delicious fare before you.</p>
     </div>
     <div class="recipe-card">
       <h1 class="recipe-title">Squash & Asparagus Pasta</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>This simple dish relies on vegetables to carry the flavor, rather than a sauce. It is light and yet filling. Perfect for the whole family.</p>
     </div>
   </nav>
   <footer class="footer">
     
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
