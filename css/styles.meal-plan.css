@@ -60,13 +60,16 @@ table{
  border-collapse: collapse;
   
 }
-
+thead tr{
+  height: 40px; 
+}
 th{
   border: 3px solid black;
+  
 }
 tr{
   border: 3px solid black;
-
+  height: 100px;
 }
 td{
   border: 3px solid black;
@@ -74,8 +77,18 @@ td{
   font-size: 1em;
   overflow-wrap: break-word;
 }
+@media (maxwidth: 992px){
+  .add-to-list{
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+  }
+}
 .add-to-list{
- vertical-align: top;/* I don't know why this works. */
- margin: 2px;
+  vertical-align: top;/* I don't know why this works. */
+  /* margin: 2px; */
+  width: 100%;
+  height: 75%;
+  font-size: .7em;
   
 }
